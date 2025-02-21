@@ -1,0 +1,12 @@
+{
+  "name": "manualejecicios_5a_230318",
+  "version": "1.0.0",
+  "description": "ManualEjecicios_5A_230318",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
