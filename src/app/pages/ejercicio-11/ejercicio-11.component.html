@@ -1,0 +1,20 @@
+<p>Username: {{ username }}</p>
+<p>Preferred Framework:</p>
+<ul>
+  <li>
+    Static Image:
+    <img ngSrc="{{ logoUrl }}" alt="{{ logoAlt }}" width="32" height="32" />
+  </li>
+  <li>
+    Dynamic Image:
+    <img ngSrc="{{ userAvatarUrl }}" alt="{{ userAvatarAlt }}" width="32" height="32" />
+  </li>
+</ul>
+
+<!-- Imagen con 'fill' dentro de un contenedor -->
+<div class="image-container">
+  <img ngSrc="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/10/rick-morty-critica.jpg" fill />
+</div>
+
+<!-- Imagen con prioridad -->
+<img ngSrc="https://media.revistagq.com/photos/6266a08026711052931a9e24/16:9/w_2560%2Cc_limit/193-1939340_rick-and-morty-stills.png" height="600" width="800" priority />

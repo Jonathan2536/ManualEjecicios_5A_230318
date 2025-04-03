@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ejercicio-01',
   template: `
     <div class="hello-universe">
-      <h1>Hello Universe</h1>
+      <h1>Hola bienvenido</h1>
     </div>
   `,
   styles: [`
@@ -28,4 +29,9 @@ import { Component } from '@angular/core';
 })
 export class Ejercicio01Component {
 
+  constructor(private router: Router) {}
+
+  goToPage1() {
+    this.router.navigate(['/page1']);
+  }
 }

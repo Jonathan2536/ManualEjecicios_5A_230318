@@ -1,5 +1,23 @@
-p {
-    font-weight: bold;
-    color: #333;
-  }
-  
+.name-box {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  text-align: center;
+  width: 50%;  
+  margin: 20px auto;  
+  padding: 15px;
+  background-color: #f8f9fa;  
+  border: 2px solid #007bff;  
+  border-radius: 10px;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);  
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.name-box:hover {
+  background-color: #007bff;  /* Cambia el fondo a azul */
+  color: white;  /* Texto en blanco */
+  border-color: #0056b3;  /* Oscurece el borde */
+}

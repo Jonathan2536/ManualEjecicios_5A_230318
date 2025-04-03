@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ejercicio-03',
-  imports: [],
+  selector: 'app-ejercicio03',
   templateUrl: './ejercicio-03.component.html',
-  styleUrl: './ejercicio-03.component.css'
+  styleUrls: ['./ejercicio-03.component.css']
 })
 export class Ejercicio03Component {
-  username = 'Marcos Jesús Ríos Duran';
+  city = 'Xicotepec';
+  username = 'Jonathan'; // 🔹 Agregamos la propiedad para evitar el error
 }

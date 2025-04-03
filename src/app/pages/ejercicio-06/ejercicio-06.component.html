@@ -1,4 +1,7 @@
-<div contenteditable="true" class="editable-content">
-    Escribe aquí...
-  </div>
-  
+<button (click)="toggleEdit()">
+  {{ isEditable ? 'Deshabilitar Edición' : 'Habilitar Edición' }}
+</button>
+
+<div [contentEditable]="isEditable" class="editable-content">
+  Escribe aquí...
+</div>

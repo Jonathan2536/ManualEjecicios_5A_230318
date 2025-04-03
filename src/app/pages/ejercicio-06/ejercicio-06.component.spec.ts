@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Ejercicio06Component } from './ejercicio-06.component';
 
 describe('Ejercicio06Component', () => {
@@ -8,7 +7,7 @@ describe('Ejercicio06Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Ejercicio06Component]
+      declarations: [Ejercicio06Component] // Corregido de 'imports' a 'declarations'
     })
     .compileComponents();
 
@@ -19,5 +18,13 @@ describe('Ejercicio06Component', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should toggle isEditable when toggleEdit() is called', () => {
+    expect(component.isEditable).toBeFalse(); // Inicialmente debería ser false
+    component.toggleEdit();
+    expect(component.isEditable).toBeTrue(); // Después de llamar toggleEdit(), debería ser true
+    component.toggleEdit();
+    expect(component.isEditable).toBeFalse(); // Llamar otra vez debería volverlo a false
   });
 });

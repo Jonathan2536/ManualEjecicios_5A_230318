@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 export class Ejercicio05Component {
   operatingSystems = [
     { id: 'win', name: 'Windows' },
-    { id: 'osx', name: 'MacOS' },
+    { id: 'osx', name: 'Mac' },
     { id: 'lin', name: 'Linux' },
   ];
 
   users = [
-    { id: 0, name: 'Ailton' },
-    { id: 1, name: 'IECO' },
-    { id: 2, name: 'Juve' },
-    { id: 3, name: 'TONY' },
-    { id: 4, name: 'Marcos' },
+    { id: 0, name: 'Arteaga' },
+    { id: 1, name: 'Farias' },
+    { id: 2, name: 'Angel' },
+    { id: 3, name: 'Paco' },
+    { id: 4, name: 'Paco guapo' },
   ];
 }

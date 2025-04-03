@@ -1,13 +1,13 @@
 <div class="container">
   <h1>Estado del Servidor</h1>
   @if (isServerRunning) {
-    <p class="status-success">Server Running!</p>
+    <p class="status-success">El servidor esta corriendo</p>
     @if (isLoggedIn) {
-      <p>Welcome back, Marcos Jesús Ríos Durán!</p>
+      <p>Bienvenido back, Jonathan Emmanuel López Morales</p>
     } @else {
-      <p class="status-warning">You must log in!</p>
+      <p class="status-warning">Inicia sesion</p>
     }
   } @else {
-    <p class="status-error">The website is offline.</p>
+    <p class="status-error">El sitio web está fuera de línea</p>
   }
 </div>

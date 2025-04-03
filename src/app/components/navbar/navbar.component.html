@@ -1,20 +1,73 @@
 <nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
-    <!-- Menú Principal -->
-    <div class="flex-1"></div> <!-- Elemento vacío para empujar el contenido hacia el centro -->
-  
-    <div class="text-center">
-      <span class="text-2xl font-bold italic tracking-wider">{{ userName }}</span>
-    </div>
-  
-    <!-- Icono Usuario -->
-    <div class="relative group ml-auto flex items-center space-x-2">
-      <button class="flex items-center space-x-2 hover:bg-blue-700 px-3 py-2 rounded">
-        <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/40" />
-      </button>
-      <div class="absolute hidden group-hover:block bg-white text-black shadow-lg right-0 mt-2 w-40 rounded-lg overflow-hidden">
-        <a class="block px-4 py-2 hover:bg-gray-200">Perfil</a>
-        <a class="block px-4 py-2 hover:bg-gray-200" (click)="onLogout()">Cerrar sesión</a>
+  <div class="flex-1"></div>
+
+  <!-- Botones Centrados -->
+  <div class="text-center flex space-x-6">
+    <a routerLink="/" class="px-4 py-2 bg-blue-700 hover:bg-blue-800 rounded">Inicio</a>
+
+    <!-- Menú desplegable de Practicas -->
+    <div class="relative group">
+      <button class="px-4 py-2 bg-blue-700 hover:bg-blue-800 rounded">Practicas</button>
+      <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 w-40 rounded-lg overflow-hidden">
+        <li>
+          <button (click)="goToPage1()">Ejercicio 1</button>
+          <br>
+          <button (click)="goToPage2()">Ejercicio 2</button>
+          <br>
+          <button (click)="goToPage3()">Ejercicio 3</button>
+          <br>
+          <button (click)="goToPage4()">Ejercicio 4</button>
+          <br>
+          <button (click)="goToPage5()">Ejercicio 5</button>
+          <br>
+          <button (click)="goToPage6()">Ejercicio 6</button>
+          <br>
+          <button (click)="goToPage7()">Ejercicio 7</button>
+          <br>
+          <button (click)="goToPage8()">Ejercicio 8</button>
+          <br>
+          <button (click)="goToPage9()">Ejercicio 9</button>
+          <br>
+          <button (click)="goToPage10()">Ejercicio 10</button>
+          <br>
+          <button (click)="goToPage11()">Ejercicio 11</button>
+        </li>
       </div>
     </div>
-  </nav>
-  
+
+   <!-- Menú desplegable de Examen -->
+   <div class="relative group">
+    <button class="px-4 py-2 bg-blue-700 hover:bg-blue-800 rounded">Examen</button>
+    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 w-40 rounded-lg overflow-hidden">
+      <li>
+        <button (click)="goToPage12()">Tabla con especificaciones</button>
+        <br>
+        <button (click)="goToPage13()">Tabla basica</button>
+        <br>
+        <button (click)="goToPage14()">Tabla Json</button>
+        <br>
+        <button (click)="goToPage15()">Tabla Ajax</button> //falta
+        <br>
+        <button (click)="goToPage16()">Grafica Basica</button>
+        <br>
+        <button (click)="goToPage17()">Grafica JSON</button>
+        <br>
+        <button (click)="goToPage18()">Grafica Ajax</button>
+        <br>
+        <button (click)="goToPage19()">Grafica con especificaciones</button>  
+      </li>
+    </div>
+  </div>
+</div>
+
+  <!-- Icono Usuario -->
+  <div class="relative group ml-auto flex items-center space-x-2">
+    <button class="flex items-center space-x-2 hover:bg-blue-700 px-3 py-2 rounded">
+      <img src="http://siip.utxj.edu.mx/archivos/evidencias2/control_escolar/fotos/230318.jpg" alt="photo" class="w-8 h-8 rounded-full">
+    </button>
+    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg right-0 mt-2 w-40 rounded-lg overflow-hidden">
+      <a class="block px-4 py-2 hover:bg-gray-200">Perfil</a>
+      <a class="block px-4 py-2 hover:bg-gray-200" (click)="onLogout()">Cerrar sesión</a>
+    </div>
+  </div>
+</nav>

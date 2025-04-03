@@ -1,11 +1,12 @@
 /* Estilo base para el párrafo */
 p {
-  color: blue;
+  color: #333; /* Color oscuro neutro */
   font-weight: bold;
   font-size: 18px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   margin: 10px 0;
+  text-align: center;
 }
 
 /* Estilo para el contenedor principal */
@@ -13,16 +14,16 @@ p {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffcc00, #ff6600); /* Degradado amarillo-naranja */
+  text-align: center;
 }
 
 /* Estilo para el encabezado */
 h1 {
-  color: #333;
-  font-size: 24px;
+  color: #a144eb; /* Morado */
+  font-size: 26px;
   font-family: 'Verdana', sans-serif;
   margin-bottom: 20px;
   text-align: center;
@@ -30,13 +31,28 @@ h1 {
 
 /* Estilo para mensajes de estado */
 .status-success {
-  color: green;
+  color: #008000; /* Verde éxito */
+  background-color: #d4edda; /* Verde claro */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .status-warning {
-  color: orange;
+  color: #a144eb; /* Morado */
+  background-color: #f4e1fe; /* Lila claro */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .status-error {
-  color: red;
+  color: #b00020; /* Rojo oscuro */
+  background-color: #f8d7da; /* Rojo claro */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
